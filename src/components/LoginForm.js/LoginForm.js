@@ -1,15 +1,15 @@
 import React from "react";
 import "./loginForm.css";
 import { Link } from "react-router-dom";
-import { FaEyeSlash } from "react-icons/fa";
-import { FaEye } from "react-icons/fa";
-import { FaLock } from "react-icons/fa";
+import lock from "../../assets/images/lock.png";
+import eyeSlash from "../../assets/images/eyeSlash.png";
+import googleIcon from "../../assets/images/google-icon.png";
 
 function LoginForm() {
   return (
     <div className="login-container align-self-center">
       <h3>Please sign in</h3>
-      <form action="">
+      <form action="" className="mb-4">
         <div className="d-flex flex-column mb-4">
           <label htmlFor="email" className="mb-2">
             Email Address
@@ -21,7 +21,7 @@ function LoginForm() {
             className="form-control"
           />
         </div>
-        <div className="d-flex flex-column">
+        <div className="d-flex flex-column mb-5">
           <label htmlFor="password" className="mb-2">
             Password
           </label>
@@ -31,32 +31,36 @@ function LoginForm() {
               id="password"
               className="form-control password-input"
             />
-            <FaLock className="lock password-icons" />
-            <FaEyeSlash className="eye-slash password-icons" />
+            <img src={lock} alt="lock-icon" className="lock password-icons" />
+            <img
+              src={eyeSlash}
+              alt="eyeSlash-icon"
+              className="eye-slash password-icons"
+            />
           </div>
-          <div className="d-flex justify-content-between mt-2 about-password">
-            <div>
+          <div className="d-flex justify-content-between align-items-center mt-2 about-account">
+            <div className="d-flex stayLoggedIn">
               <input type="checkbox" id="stayLoggedIn" />
-              <label htmlFor="stayLoggedIn" className="ps-2">
-                Remember me
-              </label>
+              <label htmlFor="stayLoggedIn">Remember me</label>
             </div>
-            <div>
-              <Link className="text-decoration-none">Forgot Password?</Link>
-            </div>
+            <Link className="text-decoration-none">Forgot Password?</Link>
           </div>
         </div>
-        <button type="button" className="btn btn-primary">
+        <button type="button" className="btn btn-primary login-btns">
           Sign In
         </button>
-        <p>Or</p>
-        <button type="button" className="btn btn-primary">
+      </form>
+      <p className="text-uppercase text-center text-body-tertiary mb-4">Or</p>
+      <div className="sign-up-google position-relative mb-5">
+        <button type="button" className="btn btn-primary login-btns">
           Continue with Google
         </button>
-      </form>
-
-      <div className="d-flex">
-        <p>Do not have an account?</p>{" "}
+        <div className="sign-up-google-icon">
+          <img src={googleIcon} alt="google-icon" />
+        </div>
+      </div>
+      <div className="d-flex justify-content-center">
+        <p className="me-2">Do not have an account?</p>{" "}
         <Link className="text-decoration-none">Sign Up</Link>
       </div>
     </div>
