@@ -1,13 +1,7 @@
 .login-container {
-   margin: 0 auto;
    font-size: 1rem;
-   width: 320px;
+   width: 20rem;
    font-weight: 600;
-}
-
-.login-container a {
-   color: var(--blue);
-   font-weight: 700;
 }
 
 .login-container h3 {

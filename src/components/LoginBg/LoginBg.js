@@ -2,17 +2,17 @@ import React from "react";
 import "./loginBg.css";
 import logo from "../../assets/images/Logo.png";
 
-function LoginBg({ text1, text2, text3 }) {
+function LoginBg({ content1, content2, content3 }) {
   return (
-    <div className="login-bg-container">
+    <div className="login-bg-container d-flex flex-column align-items-center justify-content-center">
       <div className="blur"></div>
       <p className="login-bg-logo">
-        <img src={logo} alt="logo" className="logo" />
+        <img src={logo} className="logo" alt="logo" />
       </p>
-      <div className="login-bg-text">
-        <h1 className="mb-4">{text1}</h1>
-        <p className="fst-italic">{text2}</p>
-        {text3 ? <p className="fst-italic">{text3}</p> : ""}
+      <div className="login-bg-text text-center">
+        <h1 className="mb-4">{content1}</h1>
+        <p className="fst-italic">{content2}</p>
+        {content3 ? <p className="fst-italic">{content3}</p> : ""}
       </div>
     </div>
   );

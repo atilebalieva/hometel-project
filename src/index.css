@@ -12,6 +12,8 @@ html {
 
 :root {
   --blue: #0A65B8;
+  --darkFontColor: #212529;
+  --fontSize14: 0.9rem;
 }
 
 #root {
@@ -28,4 +30,22 @@ body {
   width: 8.75rem;
   height: 1.4rem;
   cursor: pointer;
+}
+
+.links {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.width-form {
+  width: 20rem;
+}
+
+.dark-font-color {
+  color:var(--darkFontColor);
+}
+
+.form-icons {
+  position: absolute;
+
 }

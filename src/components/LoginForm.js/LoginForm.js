@@ -5,10 +5,10 @@ import lock from "../../assets/images/lock.png";
 import eyeSlash from "../../assets/images/eyeSlash.png";
 import googleIcon from "../../assets/images/google-icon.png";
 
-function LoginForm() {
+function LoginForm({ action, isUser, action2 }) {
   return (
-    <div className="login-container align-self-center">
-      <h3>Please sign in</h3>
+    <div className="login-container align-self-center m-auto">
+      <h3>{action}</h3>
       <form action="" className="mb-4">
         <div className="d-flex flex-column mb-4">
           <label htmlFor="email" className="mb-2">
@@ -47,7 +47,7 @@ function LoginForm() {
           </div>
         </div>
         <button type="button" className="btn btn-primary login-btns">
-          Sign In
+          {action2}
         </button>
       </form>
       <p className="text-uppercase text-center text-body-tertiary mb-4">Or</p>
@@ -60,8 +60,8 @@ function LoginForm() {
         </div>
       </div>
       <div className="d-flex justify-content-center">
-        <p className="me-2">Do not have an account?</p>{" "}
-        <Link className="text-decoration-none">Sign Up</Link>
+        <p className="me-2">{isUser}</p>{" "}
+        <Link className="text-decoration-none links">{action2}</Link>
       </div>
     </div>
   );
