@@ -11,9 +11,10 @@ html {
 }
 
 :root {
-  --blue: #0A65B8;
+  --blue: #0a65b8;
   --darkFontColor: #212529;
   --fontSize14: 0.9rem;
+  --black: #0f172a;
 }
 
 #root {
@@ -42,10 +43,17 @@ body {
 }
 
 .dark-font-color {
-  color:var(--darkFontColor);
+  color: var(--darkFontColor);
 }
 
 .form-icons {
   position: absolute;
+}
 
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-600 {
+  font-weight: 600;
 }

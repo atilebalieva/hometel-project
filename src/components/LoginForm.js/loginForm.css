@@ -1,69 +1,79 @@
 .login-container {
-   font-size: 1rem;
-   width: 20rem;
-   font-weight: 600;
+  font-size: clamp(0.8rem, 1.7vw, 1rem);
+  max-width: 20rem;
+  width: 20rem;
+  min-width: 16rem;
 }
 
-.login-container h3 {
-   font-size: 1.3rem;
-   margin-bottom: 1.5rem;
-   font-weight: 700;
+.login-header {
+  font-size: clamp(1rem, 1.7vw, 1.75rem);
+  margin-bottom: clamp(1.5rem, 2.7vw, 2.5rem);
+}
+
+.form-control {
+  height: clamp(2rem, 3.5vw, 3rem);
+}
+
+.form-control::placeholder {
+  font-size: clamp(0.8rem, 1.7vw, 1rem);
 }
 
 .password-input.form-control {
-   padding-left: 2rem !important;
-   padding-right: 2.3rem;
+  padding-left: 2rem !important;
+  padding-right: 2.3rem;
 }
 
 .password-icons {
-   position: absolute;
-   color: #2d4975;
-   top: 25%;
+  position: absolute;
+  color: #2d4975;
+  top: 27%;
+  width: 1.3rem;
 }
 
 .lock {
-   left: 3%;
-   top: 17%;
+  left: 3%;
+  top: 22%;
 }
 
 .eye-slash {
-   right: 3%;
-   cursor: pointer;
+  right: 3%;
+  cursor: pointer;
+  width: 1.2rem;
 }
 
 .about-account {
-   font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .stayLoggedIn input {
-   background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 .stayLoggedIn label {
-   padding: 3px 0 0 0.3rem;
+  padding: 3px 0 0 0.3rem;
 }
 
 .login-btns {
-   background-color: var(--blue);
-   color: white;
-   width: 100%;
-   font-weight: 600;
-   height: 3rem;
+  background-color: var(--blue);
+  color: white;
+  width: 100%;
+  height: clamp(2.4rem, 4.7vw, 3rem);
+  font-size: clamp(0.8rem, 1.7vw, 1rem);
 }
 
 .sign-up-google-icon {
-   position: absolute;
-   top: 20%;
-   left: 3%;
-   border-right: 1px solid #8aa3c4;
-   padding-right: 0.6rem;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  border-right: 1px solid #8aa3c4;
+  padding-right: 0.6rem;
 }
 
 .sign-up-google-icon img {
-   width: 1.6rem;
-   height: 1.6rem;
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 .sign-up-google .login-btns {
-   background-color: rgba(10, 101, 184, 0.76);
+  background-color: rgba(10, 101, 184, 0.76);
 }

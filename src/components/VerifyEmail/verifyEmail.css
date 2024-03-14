@@ -1,0 +1,16 @@
+.verify-email-header {
+  font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+}
+
+.verify-email-content {
+  font-size: 0.9rem;
+}
+
+.verify-email-text {
+  font-weight: 600;
+  color: var(--black);
+}
+
+.verification-text {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
