@@ -8,7 +8,7 @@ function VerificationSuccess() {
       <LoginBg content1={"Welcome!"} content2={"Home is where we say it is"} />
       <div className="m-auto text-center">
         <img src={successIcon} alt="success-icon" />
-        <h4 className="mt-4 font-weight-700 verification-text">Email varification successful</h4>
+        <h4 className="mt-4 font-weight-700 verify-email-header">Email varification successful</h4>
       </div>
     </div>
   );

@@ -1,11 +1,10 @@
 import React from "react";
-import LoginBg from "./components/LoginBg/LoginBg";
-import LoginForm from "./components/LoginForm.js/LoginForm";
-import VerifyEmail from "./components/VerifyEmail/VerifyEmail";
 import VerificationSuccess from "./pages/LoginPage.js/VerificationSuccess";
-import ResetPassword from "./components/ResetPassword/ResetPassword";
 import NewAccount from "./pages/LoginPage.js/NewAccount";
+import Signin from "./pages/LoginPage.js/SignIn";
 import VerifyEmailPage from "./pages/LoginPage.js/VerifyEmailPage";
+import ResetPasswordPage from "./pages/LoginPage.js/ResetPasswordPage";
+import UpdateUsersAccount from "./pages/LoginPage.js/UpdateUsersAccount";
 
 function App() {
   return (
@@ -13,31 +12,9 @@ function App() {
       <NewAccount />
       <VerifyEmailPage />
       <VerificationSuccess />
-      {/* <LoginBg content1={"Welcome Back!"} content2={"You are at home now"} />
-
-        <LoginForm
-          action={"Please sign in"}
-          user={"Do not have an account?"}
-          action2={"Sign Up"}
-          isUser={true}
-        /> */}
-
-      {/*         <LoginBg
-          content1={"Welcome!"}
-          content2={"Home is where we say it is"}
-        />
-
-        <VerifyEmail /> */}
-
-      {/*       <VerificationSuccess /> */}
-
-      {/*       <LoginBg
-          content1={"We have Spares!"}
-          content2={"Lost access to your home? "}
-          content3={"Recover your keys"}
-        />
-
-        <ResetPassword /> */}
+      <Signin />
+      <ResetPasswordPage />
+      <UpdateUsersAccount />
     </>
   );
 }
