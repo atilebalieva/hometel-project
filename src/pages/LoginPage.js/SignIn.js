@@ -6,7 +6,14 @@ function Signin() {
   return (
     <div className="d-flex h-100">
       <LoginBg content1={"Welcome Back!"} content2={"You are at home now"} />
-      <LoginForm action={"Please sign in"} user={"Do not have an account?"} action2={"Sign Up"} isUser={true} />
+      <LoginForm
+        action={"Please sign in"}
+        user={"Do not have an account?"}
+        action2={"Sign Up"}
+        isUser={true}
+        passwordId="signin-password"
+        mailId="signin-mail"
+      />
     </div>
   );
 }
