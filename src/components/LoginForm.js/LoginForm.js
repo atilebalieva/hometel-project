@@ -1,14 +1,14 @@
 import React from "react";
 import "./loginForm.css";
 import { Link } from "react-router-dom";
-import lock from "../../assets/images/lock.png";
-import eyeSlash from "../../assets/images/eyeSlash.png";
-import googleIcon from "../../assets/images/google-icon.png";
+import lock from "../../assets/images/lock.svg";
+import eyeSlash from "../../assets/images/eyeSlash.svg";
+import googleIcon from "../../assets/images/google-icon.svg";
 
 function LoginForm({ action, user, action2, isUser }) {
   return (
-    <div className="login-container p-3 font-weight-600 align-self-center m-auto">
-      <h3 className="font-weight-700 login-header">{action}</h3>
+    <div className="login-container p-3 align-self-center">
+      <h3 className="font-size-28 font-weight-700  mb-5">{action}</h3>
       <form action="" className="login-form mb-4">
         <div className="d-flex flex-column mb-4">
           <label htmlFor="email" className="mb-2">
@@ -26,7 +26,7 @@ function LoginForm({ action, user, action2, isUser }) {
             <img src={eyeSlash} alt="eyeSlash-icon" className="eye-slash password-icons" />
           </div>
           {isUser ? (
-            <div className="d-flex justify-content-between align-items-center mt-2 about-account">
+            <div className="d-flex justify-content-between align-items-center mt-2 font-size-14">
               <div className="d-flex stayLoggedIn">
                 <input type="checkbox" id="stayLoggedIn" />
                 <label htmlFor="stayLoggedIn">Remember me</label>
@@ -35,7 +35,7 @@ function LoginForm({ action, user, action2, isUser }) {
             </div>
           ) : null}
         </div>
-        <button type="button" className="btn btn-primary login-btns font-weight-600">
+        <button type="button" className="btn btn-primary login-btns font-weight-700">
           {action2}
         </button>
       </form>
@@ -48,8 +48,9 @@ function LoginForm({ action, user, action2, isUser }) {
           <img src={googleIcon} alt="google-icon" />
         </div>
       </div>
-      <div className="d-flex justify-content-center">
-        <p className="me-2">{user}</p> <Link className="text-decoration-none links">{action2}</Link>
+      <div className="d-flex justify-content-center font-weight-700">
+        <p className="me-2">{user}</p>
+        <Link className="text-decoration-none links">{action2}</Link>
       </div>
     </div>
   );

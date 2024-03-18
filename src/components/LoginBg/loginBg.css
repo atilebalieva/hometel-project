@@ -20,7 +20,3 @@
 .login-bg-text h1 {
   font-size: clamp(1.3rem, 5vw, 4rem);
 }
-
-.login-bg-text p {
-  font-size: var(--fontSize24);
-}

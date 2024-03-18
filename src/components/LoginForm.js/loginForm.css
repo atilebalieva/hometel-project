@@ -1,26 +1,17 @@
-.login-header {
-  font-size: clamp(1rem, 1.7vw, 1.75rem);
-  margin-bottom: clamp(1.5rem, 2.7vw, 2.5rem);
-}
-
 .form-control {
   height: clamp(2rem, 3.5vw, 3rem);
-}
-
-.form-control::placeholder {
-  font-size: clamp(0.8rem, 1.7vw, 1rem);
 }
 
 .password-input.form-control {
   padding-left: 2rem !important;
   padding-right: 2.3rem;
+  font-weight: bold;
 }
 
 .password-icons {
   position: absolute;
   color: #2d4975;
   top: 27%;
-  width: 1.3rem;
 }
 
 .lock {
@@ -31,11 +22,6 @@
 .eye-slash {
   right: 3%;
   cursor: pointer;
-  width: 1.2rem;
-}
-
-.about-account {
-  font-size: 0.8rem;
 }
 
 .stayLoggedIn input {
@@ -51,20 +37,15 @@
   color: white;
   width: 100%;
   height: clamp(2.4rem, 4.7vw, 3rem);
-  font-size: clamp(0.8rem, 1.7vw, 1rem);
+  font-size: var(--fontSize16);
 }
 
 .sign-up-google-icon {
   position: absolute;
-  top: 20%;
-  left: 3%;
+  top: 22%;
+  left: 4%;
   border-right: 1px solid #8aa3c4;
   padding-right: 0.6rem;
-}
-
-.sign-up-google-icon img {
-  width: 1.6rem;
-  height: 1.6rem;
 }
 
 .sign-up-google .login-btns {

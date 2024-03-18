@@ -13,8 +13,9 @@ html {
 :root {
   --blue: #0a65b8;
   --darkFontColor: #212529;
-  --fontSize14: 0.9rem;
   --black: #0f172a;
+  --fontSize14: clamp(0.7rem, 1.5vw, 0.8rem);
+  --fontSize16: clamp(0.8rem, 1.5vw, 1rem);
   --fontSize24: clamp(1rem, 1.5vw, 1.5rem);
 }
 
@@ -24,15 +25,16 @@ html {
 
 body {
   font-family: "Josefin Slab", serif;
-  font-weight: 300;
+  font-weight: 600;
+  font-size: var(--fontSize16);
   height: 100vh;
 }
 
 .login-container {
-  font-size: clamp(0.8rem, 1.7vw, 1rem);
   max-width: 20rem;
   width: 20rem;
   min-width: 16rem;
+  margin: auto;
 }
 
 .logo {
@@ -46,10 +48,6 @@ body {
   font-weight: 700;
 }
 
-.width-form {
-  width: 20rem;
-}
-
 .dark-font-color {
   color: var(--darkFontColor);
 }
@@ -58,14 +56,26 @@ body {
   position: absolute;
 }
 
-.font-weight-700 {
-  font-weight: 700;
+.font-weight-400 {
+  font-weight: 400;
 }
 
 .font-weight-600 {
   font-weight: 600;
 }
 
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-size-14 {
+  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+}
+
 .font-size-24 {
   font-size: var(--fontSize24);
+}
+
+.font-size-28 {
+  font-size: clamp(1rem, 1.7vw, 1.75rem);
 }
