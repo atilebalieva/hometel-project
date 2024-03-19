@@ -1,0 +1,52 @@
+.sidebar {
+  width: 15.6rem;
+  height: 100%;
+  background-color: var(--blueBg);
+  font-family: "Inter Tight", sans-serif;
+  padding: 2rem 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-list {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.sidebar-list-content {
+  margin: 0.4rem;
+}
+
+.sidebar-list-content a {
+  text-decoration: none;
+  color: #64748b;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.sidebar-icons {
+  color: #64748b;
+  position: absolute;
+  top: 28%;
+  left: 12%;
+}
+
+.sidebar-list-active {
+  width: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  background-color: #0a65b8;
+}
+
+.sidebar-logout {
+  top: 15%;
+}
+
+.sidebar-list-content {
+  padding-left: 3.5rem;
+}
