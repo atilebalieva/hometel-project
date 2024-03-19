@@ -5,8 +5,7 @@ import Signin from "./pages/LoginPage/SignIn";
 import VerifyEmailPage from "./pages/LoginPage/VerifyEmailPage";
 import ResetPasswordPage from "./pages/LoginPage/ResetPasswordPage";
 import UpdateUsersAccount from "./pages/LoginPage/UpdateUsersAccount"; */
-import Navigation from "./components/Navbar/Navigation";
-import Sidebar from "./components/Sidebar/Sidebar";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -19,9 +18,7 @@ function App() {
       <UpdateUsersAccount /> 
       
     */}
-
-      <Navigation />
-      <Sidebar />
+      <Dashboard />
     </>
   );
 }

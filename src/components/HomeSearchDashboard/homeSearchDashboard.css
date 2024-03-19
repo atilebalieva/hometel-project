@@ -1,0 +1,26 @@
+.dashboard-header {
+  border-bottom: 4px solid #cedadf;
+  padding-bottom: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.dashboard-header-text {
+  font-size: clamp(1rem, 1.5vw, 1.13rem);
+  margin: 0;
+}
+
+.dashboard-header-option select {
+  background-color: #f4f4f5;
+  border: none;
+  outline: none;
+  width: 19rem;
+  padding: 0.8rem 1rem 0.8rem 1.25rem;
+  margin-left: 1rem;
+  appearance: none;
+}
+
+.dashboard-header-option-arrow {
+  position: absolute;
+  top: 37%;
+  right: 8%;
+}
