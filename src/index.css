@@ -17,6 +17,7 @@ html {
   --fontSize14: clamp(0.7rem, 1.5vw, 0.8rem);
   --fontSize16: clamp(0.8rem, 1.5vw, 1rem);
   --fontSize24: clamp(1rem, 1.5vw, 1.5rem);
+  --blueBg: #98ceff;
 }
 
 #root {
@@ -39,8 +40,8 @@ body {
 }
 
 .logo {
-  width: 8.75rem;
-  height: 1.4rem;
+  /*   width: 8.75rem;
+  height: 1.4rem; */
   cursor: pointer;
 }
 
@@ -79,4 +80,12 @@ body {
 
 .font-size-28 {
   font-size: clamp(1rem, 1.7vw, 1.75rem);
+}
+
+.mulish-font {
+  font-family: "Mulish", sans-serif;
+}
+
+.volkov-font {
+  font-family: "Volkhov", serif;
 }

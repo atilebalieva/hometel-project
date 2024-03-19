@@ -1,0 +1,44 @@
+.navigation {
+  background-color: #eef8ff;
+  padding: 0 !important;
+  padding-right: 3rem;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+.nav-logo {
+  background-color: var(--blueBg);
+  padding: 1.8rem 2rem 1.8rem 1.8rem;
+}
+
+.nav-burger-btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+}
+
+.search {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  width: clamp(13rem, 1.5vw, 20rem);
+  padding: 0.2rem 0.2rem 0.2rem 1.6rem;
+  position: relative;
+}
+
+.search::placeholder {
+  color: #00000033;
+}
+
+.search-icon {
+  position: absolute;
+  left: 3%;
+  top: 19%;
+}
+
+.profile-icon {
+  border-radius: 50%;
+}
