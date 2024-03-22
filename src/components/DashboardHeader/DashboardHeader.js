@@ -1,8 +1,8 @@
 import React from "react";
-import "./homeSearchDashboard.css";
+import "./dashboardHeader.css";
 import { FaAngleDown } from "react-icons/fa";
 
-function HomeSearchDashboard() {
+function DashboardHeader() {
   return (
     <div className="dashboard-header d-flex justify-content-between align-items-center font-weight-700">
       <h2 className="volkov-font dashboard-header-text">We Only Showcase The Best</h2>
@@ -18,4 +18,4 @@ function HomeSearchDashboard() {
   );
 }
 
-export default HomeSearchDashboard;
+export default DashboardHeader;

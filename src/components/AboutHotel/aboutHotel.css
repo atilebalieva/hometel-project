@@ -1,0 +1,21 @@
+.about-hotel {
+  width: 64%;
+  max-width: 44rem;
+}
+
+.about-hotel-header {
+  font-size: clamp(1.5rem, 1.5vw, 2.25rem);
+}
+
+.main-img {
+  width: 100%;
+}
+
+.group-hotel-imgs {
+  width: 100%;
+}
+
+.group-hotel-imgs img {
+  width: 15%;
+  object-fit: cover;
+}

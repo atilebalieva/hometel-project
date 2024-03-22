@@ -11,10 +11,10 @@ function Navigation() {
     <div className="mulish-font navigation d-flex">
       <div className="nav-logo d-flex">
         <button type="button" className="nav-burger-btn">
-          <img src={burger} />
+          <img src={burger} alt="burger-menu" />
         </button>
         <Link>
-          <img src={logo} alt="Logo" className="logo" />
+          <img src={logo} className="logo" alt="Logo" />
         </Link>
       </div>
       <div className="d-flex align-items-center">

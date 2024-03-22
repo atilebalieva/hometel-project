@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "../../components/Navbar/Navigation";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import DashboardContent from "./DashboardContent";
+import HomeSearchDashboard from "./HomeSearchDashboard";
 
 function Dashboard() {
   return (
@@ -9,7 +9,7 @@ function Dashboard() {
       <Navigation />
       <div className="d-flex dashboard-content">
         <Sidebar />
-        <DashboardContent />
+        <HomeSearchDashboard />
       </div>
     </div>
   );

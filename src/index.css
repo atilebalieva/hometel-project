@@ -4,10 +4,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 html {
   font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px !important;
+  }
 }
 
 :root {
@@ -18,6 +31,7 @@ html {
   --fontSize16: clamp(0.8rem, 1.5vw, 1rem);
   --fontSize24: clamp(1rem, 1.5vw, 1.5rem);
   --blueBg: #98ceff;
+  --contentBg: #f8fafc;
 }
 
 #root {
@@ -39,15 +53,23 @@ body {
   padding: 1rem;
 }
 
+.login-btns {
+  background-color: var(--blue);
+  color: white;
+  width: 100%;
+  height: clamp(2.4rem, 4.7vw, 3rem);
+  font-size: var(--fontSize16);
+}
+
 .dashboard-container {
   max-width: 1092px;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 2.5em;
 }
 
-.dashboard-content {
+/* .dashboard-content {
   height: 88%;
-}
+} */
 
 .logo {
   /*   width: 8.75rem;
@@ -98,4 +120,8 @@ body {
 
 .volkov-font {
   font-family: "Volkhov", serif;
+}
+
+.content-bg {
+  background-color: var(--contentBg);
 }

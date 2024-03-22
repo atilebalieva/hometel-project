@@ -32,14 +32,6 @@
   padding: 3px 0 0 0.3rem;
 }
 
-.login-btns {
-  background-color: var(--blue);
-  color: white;
-  width: 100%;
-  height: clamp(2.4rem, 4.7vw, 3rem);
-  font-size: var(--fontSize16);
-}
-
 .sign-up-google-icon {
   position: absolute;
   top: 22%;

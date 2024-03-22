@@ -1,0 +1,18 @@
+const data = [
+  {
+    id: 1,
+    name: "Emerald Oasis Retreat",
+    reviewsNum: 2400,
+    startNum: 5,
+    img: {
+      1: "../../../public/img/emerald-oasis/01.jpg",
+      2: "/public/img/emerald-oasis/02.jpg",
+      3: "/public/img/emerald-oasis/03.jpg",
+      4: "/public/img/emerald-oasis/04.jpg",
+      5: "/public/img/emerald-oasis/05.jpg",
+      6: "/public/img/emerald-oasis/06.jpg",
+      7: "/public/img/emerald-oasis/07.jpg",
+    },
+    cityName: "Tenerife",
+  },
+];
