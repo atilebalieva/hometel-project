@@ -1,25 +1,41 @@
-.book-hotel {
+.book-hotel-wrapper {
   width: 29%;
   max-width: 20rem;
   max-height: 31rem;
-  padding: 0.8rem 1.3rem;
 }
 
-.book-hotel h2 {
+.book-hotel-wrapper h2 {
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
   background-color: white;
-}
-.book-hotel div {
-  background-color: white;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 .book-hotel-form {
   background-color: white;
+  height: 100%;
 }
 
-.book-hotel-form input {
-  background-color: var(--contentBg);
-  background-color: #4e565f;
-  border: none;
-  outline: none;
+.book-hotel-form-wrapper {
+  padding: 0.8rem 1.3rem;
+}
+
+.book-hotel-form-input label,
+.book-hotel-form-select label {
+  margin-bottom: 0.6rem;
+}
+
+.book-hotel-form-input .form-control {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.book-hotel-form button {
+  justify-self: end;
+}
+
+.price-subtotal {
+  font-size: clamp(1.5rem, 1.5vw, 2.25rem);
+  font-weight: 900;
+  color: var(--blue);
 }

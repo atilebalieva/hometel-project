@@ -7,7 +7,7 @@ function Dashboard() {
   return (
     <div className="h-100">
       <Navigation />
-      <div className="d-flex dashboard-content">
+      <div className="d-flex dashboard-content content-bg">
         <Sidebar />
         <HomeSearchDashboard />
       </div>
