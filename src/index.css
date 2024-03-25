@@ -32,6 +32,7 @@ html {
   --fontSize24: clamp(1rem, 1.5vw, 1.5rem);
   --blueBg: #98ceff;
   --contentBg: #f8fafc;
+  --contentColor: #1c2b38;
 }
 
 #root {

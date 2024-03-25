@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./bookHotel.css";
-import Calendar from "react-calendar";
-import calendarIcon from "../../assets/images/about-hotels-icons/calendar.svg";
+import arrow from "../../assets/images/about-hotels-icons/arrow.svg";
 
 function BookHotel() {
   const [date, setDate] = useState(new Date());
@@ -25,13 +24,16 @@ function BookHotel() {
             </div>
             <div className="book-hotel-form-select d-flex flex-column">
               <label>No. Of Guest</label>
-              <select id="num-people" className="form-control">
-                {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
-                  <option value={num} key={num}>
-                    {num} adult
-                  </option>
-                ))}
-              </select>
+              <div className="position-relative">
+                <select id="num-people" className="form-control">
+                  {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
+                    <option value={num} key={num}>
+                      {num} adult
+                    </option>
+                  ))}
+                </select>
+                <img src={arrow} alt="arrow-icon" />
+              </div>
             </div>
             <div className="book-hotel-form-input">
               <h3 className="text-center font-size-14 text-secondary ">Subtotal</h3>

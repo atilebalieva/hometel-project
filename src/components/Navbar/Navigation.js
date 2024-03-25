@@ -3,7 +3,7 @@ import "./navigation.css";
 import search from "../../assets/images/search.svg";
 import profileIcon from "../../assets/images/profile-icon.svg";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/Logo.svg";
+import logo from "../../assets/images/logo.svg";
 import burger from "../../assets/images/burger.svg";
 
 function Navigation() {

@@ -1,0 +1,32 @@
+.cards,
+.card-title {
+  color: var(--contentColor) !important;
+  font-size: var(--fontSize16);
+}
+
+.card-width {
+  width: 29.3%;
+  max-width: 336px;
+  min-width: 190px !important;
+}
+
+.row > * {
+  padding: 0.75rem 0 0 !important;
+}
+
+.card-footer {
+  background-color: white;
+}
+
+.card-footer p {
+  margin-bottom: 0;
+}
+
+.card-content {
+  color: #495560;
+}
+
+.card-content img {
+  width: 1.5rem;
+  height: 1rem;
+}

@@ -1,16 +1,12 @@
 import React from "react";
 import DashboardHeader from "../../components/DashboardHeader/DashboardHeader";
-import AboutHotel from "../../components/AboutHotel/AboutHotel";
-import BookHotel from "../../components/BookHotel.js/BookHotel";
+import HomeSearchContent from "../../components/HomeSearchContent/HomeSearchContent";
 
 function HomeSearchDashboard() {
   return (
     <div className="mulish-font flex-grow-1 dashboard-container content-bg">
-      {/*       <DashboardHeader /> */}
-      <div className="d-flex justify-content-between">
-        <AboutHotel />
-        <BookHotel />
-      </div>
+      <DashboardHeader />
+      <HomeSearchContent />
     </div>
   );
 }
