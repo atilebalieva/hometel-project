@@ -4,6 +4,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import HomeSearch from "./HomeSearch";
 import AboutHotelDashboard from "./AboutHotelDashboard";
 import Bookings from "./Bookings";
+import Profile from "./Profile";
 
 function Dashboard() {
   return (
@@ -13,7 +14,8 @@ function Dashboard() {
         <Sidebar />
         {/*         <HomeSearch /> */}
         {/* <AboutHotelDashboard /> */}
-        <Bookings />
+        {/* <Bookings /> */}
+        <Profile />
       </div>
     </div>
   );
