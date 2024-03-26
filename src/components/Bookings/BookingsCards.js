@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import BookingList from "./BookingList";
 import pic1 from "../../assets/images/hotels-pic/01.svg";
 import pic2 from "../../assets/images/hotels-pic/02.svg";
 import pic3 from "../../assets/images/hotels-pic/03.svg";
+import PaginationContent from "../Pagination/PaginationContent";
 
 const data = [
   {
@@ -205,9 +206,22 @@ const data = [
   },
 ];
 function BookingsCards() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage, setPerPage] = useState(6);
+
+  const lastIndex = currentPage * postPerPage;
+  const firstIndex = lastIndex - postPerPage;
+  const currentPost = data.slice(firstIndex, lastIndex);
+
   return (
     <div className="row gap-5 cards justify-content-center">
-      <BookingList bookedData={data} />
+      <BookingList bookedData={currentPost} />
+      <PaginationContent
+        hotelsData={data}
+        postPerPage={postPerPage}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+      />
     </div>
   );
 }

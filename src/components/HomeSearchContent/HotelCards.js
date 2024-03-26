@@ -4,7 +4,7 @@ import pic1 from "../../assets/images/hotels-pic/01.svg";
 import pic2 from "../../assets/images/hotels-pic/02.svg";
 import pic3 from "../../assets/images/hotels-pic/03.svg";
 import HotelList from "./HotelList";
-import HomeSearchFooter from "./HomeSearchFooter";
+import PaginationContent from "../Pagination/PaginationContent";
 
 const data = [
   {
@@ -217,7 +217,7 @@ function HotelCards() {
   return (
     <div className="row gap-5 cards justify-content-center">
       <HotelList hotelsData={currentPost} />
-      <HomeSearchFooter
+      <PaginationContent
         hotelsData={data}
         postPerPage={postPerPage}
         setCurrentPage={setCurrentPage}

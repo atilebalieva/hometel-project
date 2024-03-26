@@ -1,9 +1,7 @@
-import React, { useState } from "react";
 import "./bookHotel.css";
 import arrow from "../../assets/images/about-hotels-icons/arrow.svg";
 
 function BookHotel() {
-  const [date, setDate] = useState(new Date());
   return (
     <div className="book-hotel-wrapper">
       <h2 className="font-weight-700 text-center border shadow rounded">Booking</h2>

@@ -5,7 +5,7 @@ import CardFooter from "../CardFooter/CardFooter";
 
 function BookingList({ bookedData }) {
   return (
-    <div>
+    <>
       {" "}
       {bookedData.map((data) => {
         return (
@@ -21,7 +21,7 @@ function BookingList({ bookedData }) {
           </Card>
         );
       })}
-    </div>
+    </>
   );
 }
 
