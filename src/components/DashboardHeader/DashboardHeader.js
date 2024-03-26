@@ -2,10 +2,10 @@ import React from "react";
 import "./dashboardHeader.css";
 import { FaAngleDown } from "react-icons/fa";
 
-function DashboardHeader() {
+function DashboardHeader({ headerName }) {
   return (
     <div className="dashboard-header d-flex justify-content-between align-items-center font-weight-700">
-      <h2 className="volkov-font dashboard-header-text">We Only Showcase The Best</h2>
+      <h2 className="volkov-font dashboard-header-text">{headerName}</h2>
       <div className="dashboard-header-option position-relative">
         <label htmlFor="filter-hotel">Sort by:</label>
         <select id="filter-hotel font-weight-600">

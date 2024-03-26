@@ -1,5 +1,5 @@
 import React from "react";
-import "./homeSearchContent.css";
+import "./cardFooter.css";
 import fiveStarsIcon from "../../assets/five-stars.svg";
 import fourStarsIcon from "../../assets/four-stars.svg";
 import threeStarsIcon from "../../assets/three-stars.svg";
@@ -15,7 +15,7 @@ function CardFooter({ starNum, reviewsNum, price }) {
     if (starNum === 1 && starNum) return <img src={oneStarIcon} alt="one-star-icon" />;
   }
   return (
-    <div className="card-footer border-top">
+    <div className="card-footer">
       <div className="d-flex justify-content-between">
         {stars(starNum)}
         <p className="card-footer-price font-weight-700 text-center volkov-font">${price}</p>

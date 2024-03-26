@@ -1,0 +1,17 @@
+.card-footer {
+  background-color: white;
+  border-top: 1px solid #e8eaeb;
+}
+
+.card-footer p {
+  margin-bottom: 0;
+}
+.card-footer-text {
+  font-size: clamp(0.65rem, 1.5vw, 0.75rem);
+}
+
+.card-footer-price {
+  color: #7bbcb0;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  justify-self: center;
+}

@@ -22,14 +22,6 @@
   padding: 0.4rem 0.5rem;
 }
 
-.card-footer {
-  background-color: white;
-}
-
-.card-footer p {
-  margin-bottom: 0;
-}
-
 .card-content {
   color: #495560;
 }
@@ -37,16 +29,6 @@
 .card-content img {
   width: 1.5rem;
   height: 1rem;
-}
-
-.card-footer-text {
-  font-size: clamp(0.65rem, 1.5vw, 0.75rem);
-}
-
-.card-footer-price {
-  color: #7bbcb0;
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
-  justify-self: center;
 }
 
 .home-search-footer {

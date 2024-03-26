@@ -1,0 +1,11 @@
+.booking-cards .card-title {
+  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+}
+
+.booking-cards .card-footer {
+  border-top: none;
+}
+
+.booking-cards .card-body {
+  padding: 0.7rem 1rem;
+}
