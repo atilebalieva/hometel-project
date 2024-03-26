@@ -11,7 +11,15 @@
 }
 
 .row > * {
-  padding: 0.75rem 0 0 !important;
+  padding: 0 !important;
+}
+
+.card-body {
+  padding: 0.6rem;
+}
+
+.card-content-text {
+  padding: 0.4rem 0.5rem;
 }
 
 .card-footer {
@@ -29,4 +37,26 @@
 .card-content img {
   width: 1.5rem;
   height: 1rem;
+}
+
+.card-footer-text {
+  font-size: clamp(0.65rem, 1.5vw, 0.75rem);
+}
+
+.card-footer-price {
+  color: #7bbcb0;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  justify-self: center;
+}
+
+.home-search-footer {
+  font-family: "Inter", sans-serif;
+}
+
+.home-search-footer select {
+  color: #94a3b8;
+  border-radius: 0.8rem;
+  padding: 0.7rem;
+  margin-left: 0.8rem;
+  max-width: 7rem;
 }

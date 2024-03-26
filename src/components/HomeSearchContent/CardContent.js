@@ -10,7 +10,7 @@ function CardContent({ duration, transport, plans }) {
       <ul className="d-flex flex-column gap-2">
         <li className="d-flex align-items-center gap-3">
           <img src={clock} alt="clock" />
-          <p className="m-0">Duration{duration} hours</p>
+          <p className="m-0">Duration {duration} hours</p>
         </li>
         <li className="d-flex align-items-center gap-3">
           <img src={transportIcon} alt="transport" />

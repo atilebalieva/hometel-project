@@ -15,14 +15,14 @@ function CardFooter({ starNum, reviewsNum, price }) {
     if (starNum === 1 && starNum) return <img src={oneStarIcon} alt="one-star-icon" />;
   }
   return (
-    <div className="card-footer border-top d-flex justify-content-between">
-      <div>
+    <div className="card-footer border-top">
+      <div className="d-flex justify-content-between">
         {stars(starNum)}
-        <p>{reviewsNum} reviews</p>
+        <p className="card-footer-price font-weight-700 text-center volkov-font">${price}</p>
       </div>
-      <div>
-        <p>${price}</p>
-        <p>per person</p>
+      <div className="d-flex justify-content-between">
+        <p className="card-footer-text text-secondary">{reviewsNum} reviews</p>
+        <p className="card-footer-text text-secondary">per person</p>
       </div>
     </div>
   );

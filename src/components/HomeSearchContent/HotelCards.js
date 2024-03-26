@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./homeSearchContent.css";
-import Card from "react-bootstrap/Card";
 import pic1 from "../../assets/images/hotels-pic/01.svg";
 import pic2 from "../../assets/images/hotels-pic/02.svg";
 import pic3 from "../../assets/images/hotels-pic/03.svg";
-import CardContent from "./CardContent";
-import CardFooter from "./CardFooter";
+import HotelList from "./HotelList";
+import HomeSearchFooter from "./HomeSearchFooter";
 
 const data = [
   {
@@ -39,7 +38,7 @@ const data = [
     additionalPlans: "Family Plan",
     reviewsNum: 584,
     startNum: 5,
-    price: "$35",
+    price: "35",
   },
   {
     id: 4,
@@ -207,23 +206,25 @@ const data = [
     price: "35",
   },
 ];
-function HomeSearchContent() {
+function HotelCards() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage, setPerPage] = useState(6);
+
+  const lastIndex = currentPage * postPerPage;
+  const firstIndex = lastIndex - postPerPage;
+  const currentPost = data.slice(firstIndex, lastIndex);
+
   return (
     <div className="row gap-5 cards justify-content-center">
-      {data.map((item) => {
-        return (
-          <Card key={item.id} className="border border-0 shadow-sm rounded-0 col-sm-12 col-md-6 col-lg-3 card-width">
-            <Card.Img variant="top" src={item.img} className="rounded-0" />
-            <Card.Body>
-              <Card.Title className="font-weight-400 volkov-font mb-4 mt-3">{item.name}</Card.Title>
-              <CardContent duration={item.duration} transport={item.transport} plans={item.additionalPlans} />
-            </Card.Body>
-            <CardFooter starNum={item.startNum} reviewsNum={item.reviewsNum} price={item.price} />
-          </Card>
-        );
-      })}
+      <HotelList hotelsData={currentPost} />
+      <HomeSearchFooter
+        hotelsData={data}
+        postPerPage={postPerPage}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+      />
     </div>
   );
 }
 
-export default HomeSearchContent;
+export default HotelCards;
