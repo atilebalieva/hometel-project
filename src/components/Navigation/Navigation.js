@@ -17,7 +17,7 @@ function Navigation() {
           <img src={logo} className="logo nav-logo" alt="Logo" />
         </Link>
       </div>
-      <div className="d-flex align-items-center gap-4">
+      <div className="d-flex align-items-center gap-3">
         <form action="" className="position-relative">
           <input type="search" id="search" className="search" placeholder="Search" />
           <img src={search} className="search-icon" alt="search" />

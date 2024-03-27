@@ -4,7 +4,7 @@ import BookHotel from "../../components/BookHotel.js/BookHotel";
 
 function AboutHotelPage() {
   return (
-    <div className="mulish-font flex-grow-1 dashboard-container content-bg">
+    <div className="mulish-font flex-grow-1 dashboard-container content-bg main-content">
       <div className="d-flex justify-content-between">
         <AboutHotel />
         <BookHotel />

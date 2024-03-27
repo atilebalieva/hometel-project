@@ -215,7 +215,7 @@ function HotelCards() {
   const currentPost = data.slice(firstIndex, lastIndex);
 
   return (
-    <div className="row gap-5 cards justify-content-center">
+    <div className="row cards">
       <HotelList hotelsData={currentPost} />
       <PaginationContent
         hotelsData={data}

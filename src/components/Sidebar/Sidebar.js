@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./sidebar.css";
-import "../../assets/media.css";
 import home from "../../assets/images/sidebar-icons/home.svg";
 import booking from "../../assets/images/sidebar-icons/booking.svg";
 import profile from "../../assets/images/sidebar-icons/profile.svg";

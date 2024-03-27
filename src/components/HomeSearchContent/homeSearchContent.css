@@ -1,17 +1,17 @@
-.home-search-page {
-  width: 80%;
-}
-
 .cards,
 .card-title {
   color: var(--contentColor) !important;
   font-size: var(--fontSize16);
 }
 
+.cards {
+  justify-content: center;
+  gap: 2rem;
+}
+
 .card-width {
-  width: 29.3%;
-  max-width: 336px;
-  min-width: 190px !important;
+  width: 16.6rem;
+  max-width: 21rem;
 }
 
 .row > * {

@@ -44,7 +44,11 @@ body {
   font-family: "Josefin Slab", serif;
   font-weight: 600;
   font-size: var(--fontSize16);
-  height: 100vh;
+  /*   height: 100vh; */
+}
+
+.main-content {
+  width: 80%;
 }
 
 .login-container {

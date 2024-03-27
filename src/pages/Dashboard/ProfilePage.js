@@ -5,7 +5,7 @@ import ProfileForm from "../../components/ProfileForm/ProfileForm";
 
 function ProfilePage() {
   return (
-    <div className="dashboard-container profile-wrapper flex-grow-1 content-bg">
+    <div className="dashboard-container profile-wrapper flex-grow-1 content-bg main-content">
       <ProfileHeader />
       <ProfileForm />
     </div>

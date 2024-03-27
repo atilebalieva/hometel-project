@@ -4,7 +4,7 @@ import BookingsCards from "../../components/Bookings/BookingsCards";
 
 function BookingsPage() {
   return (
-    <div className="mulish-font flex-grow-1 dashboard-container content-bg">
+    <div className="mulish-font flex-grow-1 dashboard-container content-bg main-content">
       <DashboardHeader headerName={"Bookings"} />
       <BookingsCards />
     </div>
