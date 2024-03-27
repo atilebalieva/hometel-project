@@ -12,7 +12,7 @@ function Dashboard() {
       <Navigation />
       <div className="d-flex content-bg">
         <Sidebar />
-        {/*         <HomeSearch /> */}
+        {/* <HomeSearch /> */}
         {/* <AboutHotelDashboard /> */}
         {/* <Bookings /> */}
         <Profile />

@@ -9,7 +9,7 @@ import eye from "../../assets/images/profile-icons/eye.svg";
 
 function ProfileForm() {
   return (
-    <form action="" className="profile-form-wrapper w-100">
+    <form action="" className="profile-form-wrapper w-100 d-flex flex-column">
       <div className="profile-form">
         <div className="d-flex gap-3 justify-content-between">
           <div className="w-50">
@@ -88,11 +88,11 @@ function ProfileForm() {
           </div>
         </div>
       </div>
-      <div className="profile-btns d-flex w-50 gap-4">
-        <button type="button" className="btn btn-primary font-weight-700 font-size-14">
+      <div className="profile-btns d-flex w-50 gap-4 align-self-end">
+        <button type="button" className="btn btn-primary font-weight-700 font-size-14 flex-grow-1">
           Cancel
         </button>
-        <button type="button" className="btn btn-primary font-weight-700 font-size-14">
+        <button type="button" className="btn btn-primary font-weight-700 font-size-14 flex-grow-1">
           Save changes
         </button>
       </div>

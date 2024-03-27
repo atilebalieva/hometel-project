@@ -26,7 +26,7 @@ const data = [
     transport: "Transport facility",
     additionalPlans: "Family Plan",
     reviewsNum: 584,
-    startNum: 5,
+    startNum: 4,
     price: "35",
   },
   {
@@ -37,7 +37,7 @@ const data = [
     transport: "Transport facility",
     additionalPlans: "Family Plan",
     reviewsNum: 584,
-    startNum: 5,
+    startNum: 3,
     price: "35",
   },
   {
@@ -48,7 +48,7 @@ const data = [
     transport: "Transport facility",
     additionalPlans: "Family Plan",
     reviewsNum: 584,
-    startNum: 5,
+    startNum: 1,
     price: "35",
   },
   {
@@ -147,7 +147,7 @@ const data = [
     transport: "Transport facility",
     additionalPlans: "Family Plan",
     reviewsNum: 584,
-    startNum: 5,
+    startNum: 1,
     price: "35",
   },
   {
@@ -158,7 +158,7 @@ const data = [
     transport: "Transport facility",
     additionalPlans: "Family Plan",
     reviewsNum: 584,
-    startNum: 5,
+    startNum: 4,
     price: "35",
   },
   {
