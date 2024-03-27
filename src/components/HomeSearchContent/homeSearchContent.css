@@ -1,3 +1,7 @@
+.home-search-page {
+  width: 80%;
+}
+
 .cards,
 .card-title {
   color: var(--contentColor) !important;

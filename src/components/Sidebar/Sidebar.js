@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./sidebar.css";
+import "../../assets/media.css";
 import home from "../../assets/images/sidebar-icons/home.svg";
 import booking from "../../assets/images/sidebar-icons/booking.svg";
 import profile from "../../assets/images/sidebar-icons/profile.svg";
@@ -15,7 +16,7 @@ function Sidebar() {
   };
 
   return (
-    <div className="sidebar d-flex flex-column justify-content-between">
+    <div className="sidebar">
       <ul>
         <li className="list-unstyled sidebar-list d-flex">
           <div className="sidebar-list-active"></div>

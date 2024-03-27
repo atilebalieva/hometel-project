@@ -8,17 +8,17 @@ import burger from "../../assets/images/burger.svg";
 
 function Navigation() {
   return (
-    <div className="mulish-font navigation d-flex">
-      <div className="nav-logo d-flex">
+    <div className="mulish-font navigation d-flex gap-3">
+      <div className="navigation-logo d-flex">
         <button type="button" className="nav-burger-btn">
           <img src={burger} alt="burger-menu" />
         </button>
-        <Link>
-          <img src={logo} className="logo" alt="Logo" />
+        <Link to="/">
+          <img src={logo} className="logo nav-logo" alt="Logo" />
         </Link>
       </div>
-      <div className="d-flex align-items-center">
-        <form action="" className="position-relative me-5">
+      <div className="d-flex align-items-center gap-4">
+        <form action="" className="position-relative">
           <input type="search" id="search" className="search" placeholder="Search" />
           <img src={search} className="search-icon" alt="search" />
         </form>
