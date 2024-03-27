@@ -1,7 +1,7 @@
 import React from "react";
 import LoginBg from "../../components/LoginBg/LoginBg";
 
-function UpdateUsersAccount() {
+function UpdateAccountPage() {
   return (
     <div className="d-flex h-100">
       <LoginBg content1={"We have Spares!"} content2={"Lost access to your home? "} content3={"Recover your keys"} />
@@ -21,4 +21,4 @@ function UpdateUsersAccount() {
   );
 }
 
-export default UpdateUsersAccount;
+export default UpdateAccountPage;

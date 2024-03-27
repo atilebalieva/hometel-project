@@ -2,7 +2,7 @@ import React from "react";
 import LoginBg from "../../components/LoginBg/LoginBg";
 import LoginForm from "../../components/LoginForm.js/LoginForm";
 
-function NewAccount() {
+function NewAccountPage() {
   return (
     <div className="d-flex h-100">
       <LoginBg content1={"Welcome!"} content2={"Home is where we say it is"} />
@@ -18,4 +18,4 @@ function NewAccount() {
   );
 }
 
-export default NewAccount;
+export default NewAccountPage;

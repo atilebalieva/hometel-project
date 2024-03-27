@@ -3,7 +3,7 @@ import ProfileHeader from "../../components/ProfileHeader/ProfileHeader";
 import "../../components/ProfileHeader/profile.css";
 import ProfileForm from "../../components/ProfileForm/ProfileForm";
 
-function Profile() {
+function ProfilePage() {
   return (
     <div className="dashboard-container profile-wrapper flex-grow-1 content-bg">
       <ProfileHeader />
@@ -12,4 +12,4 @@ function Profile() {
   );
 }
 
-export default Profile;
+export default ProfilePage;

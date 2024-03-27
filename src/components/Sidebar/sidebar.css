@@ -17,6 +17,10 @@ ul {
   position: relative;
 }
 
+.sidebar-list-content.active {
+  color: var(--blue);
+}
+
 .sidebar-list-content {
   margin: 0.4rem;
 }
@@ -31,8 +35,13 @@ ul {
 .sidebar-icons {
   color: #64748b;
   position: absolute;
-  top: 28%;
+  top: 16%;
   left: 12%;
+}
+
+.sidebar-profile {
+  left: 13%;
+  top: 22%;
 }
 
 .sidebar-list-active {
@@ -43,7 +52,7 @@ ul {
 }
 
 .sidebar-logout {
-  top: 15%;
+  top: -4%;
 }
 
 .sidebar-list-content {

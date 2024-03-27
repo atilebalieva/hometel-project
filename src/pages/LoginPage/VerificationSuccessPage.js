@@ -2,7 +2,7 @@ import React from "react";
 import LoginBg from "../../components/LoginBg/LoginBg";
 import successIcon from "../../assets/images/success-icon.svg";
 
-function VerificationSuccess() {
+function VerificationSuccessPage() {
   return (
     <div className="d-flex h-100">
       <LoginBg content1={"Welcome!"} content2={"Home is where we say it is"} />
@@ -13,4 +13,4 @@ function VerificationSuccess() {
     </div>
   );
 }
-export default VerificationSuccess;
+export default VerificationSuccessPage;
