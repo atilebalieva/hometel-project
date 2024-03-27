@@ -9,22 +9,37 @@
 
 .profile-header h2 {
   font-family: "Josefin Slab", serif;
-  width: 7rem;
+  width: 8rem;
+}
+
+.profile-header-img {
+  width: 26%;
+  min-width: 5rem;
 }
 
 .profile-user-name:first-child p {
   font-size: clamp(1rem, 1.5vw, 1, 25rem);
 }
 
+.profile-header-width {
+  width: 45%;
+}
+
 .profile-btns button {
   background-color: var(--blue);
   color: white;
   height: 3.5rem;
-  width: 40%;
+  width: 44%;
 }
 
 .profile-btns button:hover {
   background-color: white !important;
   color: #384d6c !important;
   border: 1px solid var(--blue);
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-header-width {
+    width: 100%;
+  }
 }

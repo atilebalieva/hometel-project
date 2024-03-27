@@ -11,7 +11,7 @@ function ProfileForm() {
   return (
     <form action="" className="profile-form-wrapper w-100 d-flex flex-column">
       <div className="profile-form">
-        <div className="d-flex gap-3 justify-content-between">
+        <div className="d-flex gap-3 justify-content-between mb-3">
           <div className="w-50">
             <label htmlFor="first-name">First name</label>
             <div>

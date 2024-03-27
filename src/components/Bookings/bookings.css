@@ -1,3 +1,8 @@
+.booking-cards {
+  width: 19.1rem;
+  max-width: 21rem;
+}
+
 .booking-cards .card-title {
   font-size: clamp(0.7rem, 1.5vw, 0.8rem);
 }
