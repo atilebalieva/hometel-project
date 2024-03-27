@@ -16,7 +16,16 @@
 .profile-icons {
   position: absolute;
   top: 29%;
+  left: 5%;
+}
+
+.profile-email-icon {
+  top: 34%;
+}
+
+.location-time-icons {
   left: 3%;
+  top: 31%;
 }
 
 .profile-password-icon {

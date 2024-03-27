@@ -14,59 +14,64 @@ function ProfileForm() {
         <div className="d-flex gap-3 justify-content-between">
           <div className="w-50">
             <label htmlFor="first-name">First name</label>
-            <p>
+            <div>
               <input type="text" id="first-name" placeholder="eg. Alaa" className="form-control profile-inputs" />
-            </p>
+            </div>
           </div>
           <div className="w-50">
             <label htmlFor="last-name">Last name</label>
-            <p>
+            <div>
               <input type="text" id="last-name" placeholder="eg. Mohamed" className="form-control profile-inputs" />
-            </p>
+            </div>
           </div>
         </div>
         <label htmlFor="user-name">User name</label>
         <input type="text" placeholder="eg. alaa.mohamed" className="form-control profile-inputs" />
       </div>
-      <div className="d-flex gap-3 justify-content-between profile-form">
+      <div className="profile-form d-flex gap-3 justify-content-between">
         <div className="w-50">
-          <label htmlFor="email">Email Adress</label>
+          <label htmlFor="email">Email Address</label>
           <div className="position-relative">
-            <img src={email} className="profile-icons" alt="emai-icon" />
-            <input type="email" id="email" className="form-control profile-inputs" />
+            <img src={email} className="profile-icons profile-email-icon" alt="email-icon" />
+            <input type="email" id="email" autoComplete="email" className="form-control profile-inputs" />
           </div>
         </div>
         <div className="w-50">
           <label htmlFor="phone">Phone Number</label>
           <div className="position-relative">
             <img src={phone} className="profile-icons" alt="phone-icon" />
-            <input type="tel" id="phone" className="form-control profile-inputs" />
+            <input type="tel" id="phone" autoComplete="phone" className="form-control profile-inputs" />
           </div>
         </div>
       </div>
-      <div className="border-bottom profile-form">
+      <div className="profile-form border-bottom">
         <div>
-          <label htmlFor="">Location</label>
+          <label htmlFor="location">Location</label>
           <div className="position-relative">
-            <img src={location} className="profile-icons" alt="location-icon" />
+            <img src={location} className="profile-icons location-time-icons" alt="location-icon" />
             <input type="text" id="location" className="form-control profile-inputs" />
           </div>
         </div>
         <div className="mt-3">
-          <label htmlFor="">Time Zone</label>
+          <label htmlFor="time-zone">Time Zone</label>
           <div className="position-relative">
-            <img src={clock} className="profile-icons" alt="clock-icon" />
+            <img src={clock} className="profile-icons location-time-icons" alt="clock-icon" />
             <input type="text" id="time-zone" className="form-control profile-inputs" />
           </div>
         </div>
       </div>
-      <div className="border-bottom mb-5">
+      <div className="profile-form mb-4 border-0">
         <div className="d-flex gap-3 justify-content-between">
           <div className="w-50">
             <label htmlFor="current-password">Current password</label>
             <div className="position-relative">
               <img src={password} className="profile-icons profile-password-icon" alt="password-icon" />
-              <input type="password" id="current-password" className="form-control profile-inputs" />
+              <input
+                type="password"
+                id="current-password"
+                autoComplete="current-password"
+                className="form-control profile-inputs"
+              />
               <img src={eye} alt="eye-icon" className="profile-eye-icon" />
             </div>
           </div>
@@ -74,7 +79,12 @@ function ProfileForm() {
             <label htmlFor="new-password">New password</label>
             <div className="position-relative">
               <img src={password} className="profile-icons profile-password-icon" alt="password-icon" />
-              <input type="password" id="new-password" className="form-control profile-inputs" />
+              <input
+                type="password"
+                id="new-password"
+                autoComplete="new-password"
+                className="form-control profile-inputs"
+              />
               <img src={eye} alt="eye-icon" className="profile-eye-icon" />
             </div>
           </div>
@@ -82,8 +92,17 @@ function ProfileForm() {
         <div className="pt-3">
           <label htmlFor="confirm-password">Confirm New Password</label>
           <div className="position-relative">
-            <img src={password} className="profile-icons profile-password-icon" alt="password-icon" />
-            <input type="password" id="new-password" className="form-control profile-inputs" />
+            <img
+              src={password}
+              className="profile-icons profile-password-icon location-time-icons"
+              alt="password-icon"
+            />
+            <input
+              type="password"
+              id="confirm-password"
+              autoComplete="new-password"
+              className="form-control profile-inputs"
+            />
             <img src={eye} alt="eye-icon" className="profile-eye-icon" />
           </div>
         </div>
