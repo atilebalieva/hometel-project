@@ -4,7 +4,7 @@ import successIcon from "../../assets/images/success-icon.svg";
 
 function VerificationSuccessPage() {
   return (
-    <div className="d-flex h-100">
+    <div className="pages-styles">
       <LoginBg content1={"Welcome!"} content2={"Home is where we say it is"} />
       <div className="login-container text-center">
         <img src={successIcon} alt="success-icon" />

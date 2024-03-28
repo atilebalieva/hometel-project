@@ -1,7 +1,3 @@
-.form-control {
-  height: clamp(2rem, 3.5vw, 3rem);
-}
-
 .password-input.form-control {
   padding-left: 2rem !important;
   padding-right: 2.3rem;
@@ -12,15 +8,17 @@
   position: absolute;
   color: #2d4975;
   top: 27%;
+  width: 5%;
 }
 
 .lock {
   left: 3%;
-  top: 22%;
+  top: 29%;
 }
 
 .eye-slash {
   right: 3%;
+  width: 6%;
   cursor: pointer;
 }
 

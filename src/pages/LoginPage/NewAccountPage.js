@@ -4,7 +4,7 @@ import LoginForm from "../../components/LoginForm.js/LoginForm";
 
 function NewAccountPage() {
   return (
-    <div className="d-flex h-100">
+    <div className="pages-styles">
       <LoginBg content1={"Welcome!"} content2={"Home is where we say it is"} />
       <LoginForm
         action={"Please create an account"}

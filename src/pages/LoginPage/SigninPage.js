@@ -4,7 +4,7 @@ import LoginForm from "../../components/LoginForm.js/LoginForm";
 
 function SigninPage() {
   return (
-    <div className="d-flex h-100">
+    <div className="pages-styles">
       <LoginBg content1={"Welcome Back!"} content2={"You are at home now"} />
       <LoginForm
         action={"Please sign in"}

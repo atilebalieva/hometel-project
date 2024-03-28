@@ -73,13 +73,9 @@ body {
   padding: 2.5em;
 }
 
-/* .dashboard-content {
-  height: 88%;
-} */
-
 .logo {
-  /*   width: 8.75rem;
-  height: 1.4rem; */
+  width: 8.75rem;
+  height: 1.4rem;
   cursor: pointer;
 }
 
@@ -130,4 +126,25 @@ body {
 
 .content-bg {
   background-color: var(--contentBg);
+}
+
+.pages-styles {
+  height: 100vh;
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .pages-styles {
+    display: block;
+    position: relative;
+  }
+
+  .login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+  }
 }

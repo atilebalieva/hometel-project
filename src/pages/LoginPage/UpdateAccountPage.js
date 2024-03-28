@@ -3,7 +3,7 @@ import LoginBg from "../../components/LoginBg/LoginBg";
 
 function UpdateAccountPage() {
   return (
-    <div className="d-flex h-100">
+    <div className="pages-styles">
       <LoginBg content1={"We have Spares!"} content2={"Lost access to your home? "} content3={"Recover your keys"} />
       <div className="login-container align-self-center">
         <h1 className="font-size-28 font-weight-700 mb-5">Update Home Address</h1>

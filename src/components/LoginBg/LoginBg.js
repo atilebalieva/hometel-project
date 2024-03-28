@@ -1,6 +1,6 @@
 import React from "react";
 import "./loginBg.css";
-import logo from "../../assets/images/Logo.png";
+import logo from "../../assets/images/logo.svg";
 
 function LoginBg({ content1, content2, content3 }) {
   return (

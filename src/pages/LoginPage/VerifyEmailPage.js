@@ -4,7 +4,7 @@ import VerifyEmail from "../../components/VerifyEmail/VerifyEmail";
 
 function VerifyEmailPage() {
   return (
-    <div className="d-flex h-100">
+    <div className="pages-styles">
       <LoginBg content1={"Welcome!"} content2={"Home is where we say it is"} />
       <VerifyEmail />
     </div>
