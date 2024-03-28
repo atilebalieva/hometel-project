@@ -94,7 +94,7 @@ function ProfileForm() {
           <div className="position-relative">
             <img
               src={password}
-              className="profile-icons profile-password-icon location-time-icons"
+              className="profile-icons profile-password-icon profile-password-icon-last"
               alt="password-icon"
             />
             <input
@@ -103,7 +103,7 @@ function ProfileForm() {
               autoComplete="new-password"
               className="form-control profile-inputs"
             />
-            <img src={eye} alt="eye-icon" className="profile-eye-icon" />
+            <img src={eye} alt="eye-icon" className="profile-eye-icon profile-eye-icon-last " />
           </div>
         </div>
       </div>

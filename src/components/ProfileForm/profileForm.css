@@ -6,7 +6,7 @@
 
 .profile-inputs {
   margin-top: 1rem;
-  padding: 1rem 1.3rem;
+  padding: 1rem 2.5rem;
 }
 
 .profile-inputs::placeholder {
@@ -15,17 +15,17 @@
 
 .profile-icons {
   position: absolute;
-  top: 29%;
-  left: 5%;
+  top: 31%;
+  left: 3%;
   max-width: 1.5rem;
 }
 
 .profile-email-icon {
-  top: 34%;
+  top: 29%;
 }
 
 .location-time-icons {
-  left: 3%;
+  left: 1.8%;
   top: 31%;
 }
 
@@ -33,12 +33,37 @@
   top: 38%;
 }
 
+.profile-password-icon-last {
+  left: 1.5%;
+}
+
 .profile-eye-icon {
   position: absolute;
   top: 39%;
-  right: 3%;
+  right: 5%;
   width: 1.1rem;
+  cursor: pointer;
+}
+
+.profile-eye-icon-last {
+  right: 2.5%;
 }
 
 @media only screen and (max-width: 576px) {
+  .profile-inputs {
+    padding: 1rem 2rem;
+  }
+
+  .profile-icons {
+    top: 22%;
+  }
+
+  .profile-password-icon {
+    top: 38%;
+  }
+
+  .location-time-icons {
+    width: 1.2rem;
+    top: 31%;
+  }
 }
