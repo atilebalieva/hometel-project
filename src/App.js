@@ -14,20 +14,20 @@ import Layout from "./layout";
 function App() {
   return (
     <>
-      <NewAccountPage />
-      {/*       <VerifyEmailPage />
+      {/*<NewAccountPage />
+      <VerifyEmailPage />
       <VerificationSuccessPage />
       <SigninPage />
       <ResetPasswordPage />
       <UpdateAccountPage /> */}
 
-      {/*       <Layout>
+      <Layout>
         <Routes>
           <Route path="/" element={<HomeSearchPage />}></Route>
           <Route path="/bookings" element={<BookingsPage />}></Route>
           <Route path="/profile" element={<ProfilePage />}></Route>{" "}
         </Routes>
-      </Layout> */}
+      </Layout>
     </>
   );
 }

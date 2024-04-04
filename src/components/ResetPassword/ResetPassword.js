@@ -7,7 +7,7 @@ function ResetPassword() {
   return (
     <div className="login-container">
       <h3 className="mb-4 font-size-24 font-weight-700">Reset your password</h3>
-      <p className="font-size-14 text-body-tertiary mb-4">
+      <p className="font-size-14 mb-4 email-text">
         Enter the email address associated with your account and we will send you a link to reset your password.
       </p>
       <form action="" className="mb-5 mt-3">

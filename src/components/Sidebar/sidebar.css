@@ -1,13 +1,13 @@
 .sidebar {
-  width: 20%;
-  min-width: 12.6rem;
-  max-width: 15.6rem;
   background-color: var(--blueBg);
   font-family: "Inter Tight", sans-serif;
   padding: 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 90%;
+  min-width: 12.6rem;
+  max-width: 15.6rem;
 }
 
 ul {
@@ -64,8 +64,17 @@ ul {
   padding-left: 3.5rem;
 }
 
+.search-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 576px) {
-  .sidebar {
+  .search-mobile {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .sidebar-laptop {
     display: none;
   }
 }

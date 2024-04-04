@@ -4,13 +4,15 @@ import Sidebar from "../components/Sidebar/Sidebar";
 
 function Index({ children }) {
   return (
-    <>
+    <div className="position-relative">
       <Navigation />
-      <div className="d-flex content-bg w-100 h-100">
-        <Sidebar />
+      <div className="d-flex content-bg w-100 position-main-content">
+        <div className="sidebar-laptop">
+          <Sidebar />
+        </div>
         {children}
       </div>
-    </>
+    </div>
   );
 }
 

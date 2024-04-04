@@ -44,11 +44,6 @@ body {
   font-family: "Josefin Slab", serif;
   font-weight: 600;
   font-size: var(--fontSize16);
-  /*   height: 100vh; */
-}
-
-.main-content {
-  width: 80%;
 }
 
 .login-container {
@@ -71,6 +66,28 @@ body {
   max-width: 1092px;
   margin: 0 auto;
   padding: 2.5em;
+}
+
+.main-content {
+  width: 80%;
+  position: absolute;
+  left: 20.9%;
+  top: 10%;
+}
+
+.position-main-content {
+  height: 90%;
+}
+
+.sidebar-laptop {
+  height: 100%;
+  width: 20%;
+  min-width: 12.6rem;
+  max-width: 15.6rem;
+  position: fixed;
+  top: 11%;
+  left: 0;
+  z-index: 1;
 }
 
 .logo {
@@ -133,7 +150,15 @@ body {
   display: flex;
 }
 
+.email-text {
+  color: #21252980;
+}
+
 @media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
   .pages-styles {
     display: block;
     position: relative;
@@ -145,6 +170,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    color: white;
+  }
+
+  .email-text {
     color: white;
   }
 }

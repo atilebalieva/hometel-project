@@ -5,6 +5,7 @@ import booking from "../../assets/images/sidebar-icons/booking.svg";
 import profile from "../../assets/images/sidebar-icons/profile.svg";
 import logout from "../../assets/images/sidebar-icons/logout.svg";
 import { Link, useLocation } from "react-router-dom";
+import SearchInput from "../SearchInput";
 
 function Sidebar() {
   const [activeLink, setActiveLink] = useState("");
@@ -43,6 +44,9 @@ function Sidebar() {
               Profile
             </Link>
           </div>
+        </li>
+        <li className="list-unstyled sidebar-list search-mobile">
+          <SearchInput />
         </li>
       </ul>
       <div className="sidebar-list-content position-relative">
