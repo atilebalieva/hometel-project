@@ -1,6 +1,6 @@
 *,
-::after,
-::before {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -63,31 +63,26 @@ body {
 }
 
 .dashboard-container {
-  max-width: 1092px;
+  /*   max-width: 1092px; */
   margin: 0 auto;
   padding: 2.5em;
 }
 
 .main-content {
-  width: 80%;
-  position: absolute;
-  left: 20.9%;
-  top: 10%;
+  width: 100%;
+  position: relative;
 }
 
 .position-main-content {
-  height: 90%;
+  height: 100vh;
 }
 
 .sidebar-laptop {
-  height: 100%;
+  min-height: 100%;
   width: 20%;
   min-width: 12.6rem;
   max-width: 15.6rem;
-  position: fixed;
-  top: 11%;
-  left: 0;
-  z-index: 1;
+  position: sticky;
 }
 
 .logo {

@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./sidebar.css";
 import home from "../../assets/images/sidebar-icons/home.svg";
 import booking from "../../assets/images/sidebar-icons/booking.svg";
 import profile from "../../assets/images/sidebar-icons/profile.svg";
 import logout from "../../assets/images/sidebar-icons/logout.svg";
-import { Link, useLocation } from "react-router-dom";
 import SearchInput from "../SearchInput";
+import logo from "../../assets/images/logo.svg";
 
 function Sidebar() {
   const [activeLink, setActiveLink] = useState("");
@@ -17,7 +18,12 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-      <ul>
+      <div className="navigation-logo d-flex align-items-center">
+        <Link to="/">
+          <img src={logo} className="logo nav-logo" alt="Logo" />
+        </Link>
+      </div>
+      <ul className="navigation-links">
         <li className="list-unstyled sidebar-list d-flex">
           <div className="sidebar-list-active"></div>
           <div className={`sidebar-list-content ${activeLink === "/" ? "active" : ""}`}>

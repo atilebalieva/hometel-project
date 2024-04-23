@@ -9,11 +9,11 @@ import SearchInput from "../SearchInput";
 function Navigation() {
   return (
     <div className="navigation mulish-font d-flex gap-3 align-items-center">
-      <div className="navigation-logo d-flex align-items-center">
+      {/* <div className="navigation-logo d-flex align-items-center">
         <Link to="/">
           <img src={logo} className="logo nav-logo" alt="Logo" />
         </Link>
-      </div>
+      </div> */}
       <div className="d-flex align-items-center gap-3">
         <div className="search-laptop">
           <SearchInput />

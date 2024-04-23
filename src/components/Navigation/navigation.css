@@ -1,24 +1,26 @@
 .navigation {
   background-color: #eef8ff;
   padding-right: 1.8rem;
-  justify-content: space-between;
+  justify-content: flex-end;
   border-bottom: 1px solid white;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1;
   width: 100%;
-  height: 11%;
+  height: 80px;
   max-height: 150px;
 }
 
 .navigation-logo {
   background-color: var(--blueBg);
-  padding: 1.8rem 2rem 1.8rem 1.8rem;
+  /*   padding: 1.8rem 2rem 1.8rem 1.8rem;
   width: 20.5%;
   min-width: 12.6rem;
-  max-width: 15.6rem;
-  height: 100%;
+  max-width: 15.6rem; */
+  height: 80px;
+  max-height: 80px;
+  justify-content: center;
 }
 
 .nav-logo {
